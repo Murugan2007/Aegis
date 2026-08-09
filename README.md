@@ -1,16 +1,16 @@
-# 🛰️ Project FINDER-Lite
+# Project FINDER-Lite
 
 **Autonomous Multi-Modal Search & Rescue Triage System**
 *Sensor fusion. Autonomous decision-making. Built to teach how FINDER-class triage actually works — on a hobbyist budget.*
 
 [![Platform](https://img.shields.io/badge/platform-ESP32%20%7C%20STM32F411-blue)](#hardware)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License: BSY](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-active--development-orange)](#roadmap)
 [![Made for](https://img.shields.io/badge/made%20for-hackathon-purple)](#)
 
 ---
 
-## 🚨 What is this?
+## What is this?
 
 NASA JPL's **FINDER** (Finding Individuals for Disaster and Emergency Response) proved that radar-based micro-Doppler sensing can detect a trapped survivor's heartbeat through 30 feet of rubble. That hardware is research-grade and largely inaccessible to small teams, student labs, and resource-constrained rescue units.
 
@@ -20,7 +20,7 @@ NASA JPL's **FINDER** (Finding Individuals for Disaster and Emergency Response) 
 
 ---
 
-## 📖 Table of Contents
+##  Table of Contents
 
 - [Features](#-features)
 - [System Architecture](#-system-architecture)
@@ -36,19 +36,19 @@ NASA JPL's **FINDER** (Finding Individuals for Disaster and Emergency Response) 
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎯 **Autonomous target discrimination** — real-time velocity classification separates moving bystanders from stationary/trapped candidates using live radar speed data (no manual tagging)
-- 🫁 **Multi-modal confirmation** — breathing-rate lock, motion state, and acoustic corroboration are fused into a single weighted confidence score before anything is declared a survivor
-- 🔭 **Autonomous coverage search** — a genuine frontier/nearest-unvisited-cell planner sweeps the environment; nothing is hardcoded or scripted
-- 📡 **Self-hosted live dashboard** — the ESP32 build hosts its own Wi-Fi + web UI, no laptop app required
-- 🖥️ **Isometric simulation environment** — a full Python fusion-logic simulator with a tactical HUD, live vitals-style waveform monitors, and venue-accurate room modeling, for demoing and validating logic without live hardware risk
-- 🔔 **Distress alerting** — independent scream/acoustic-distress detection channel with buzzer notification and approximate location callout
-- 🔧 **Portable decision logic** — the same fusion state machine runs (with minimal changes) in Python simulation, on the ESP32, and is designed to port to STM32 C firmware
+-  **Autonomous target discrimination** — real-time velocity classification separates moving bystanders from stationary/trapped candidates using live radar speed data (no manual tagging)
+-  **Multi-modal confirmation** — breathing-rate lock, motion state, and acoustic corroboration are fused into a single weighted confidence score before anything is declared a survivor
+-  **Autonomous coverage search** — a genuine frontier/nearest-unvisited-cell planner sweeps the environment; nothing is hardcoded or scripted
+-  **Self-hosted live dashboard** — the ESP32 build hosts its own Wi-Fi + web UI, no laptop app required
+-  **Isometric simulation environment** — a full Python fusion-logic simulator with a tactical HUD, live vitals-style waveform monitors, and venue-accurate room modeling, for demoing and validating logic without live hardware risk
+-  **Distress alerting** — independent scream/acoustic-distress detection channel with buzzer notification and approximate location callout
+-  **Portable decision logic** — the same fusion state machine runs (with minimal changes) in Python simulation, on the ESP32, and is designed to port to STM32 C firmware
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```mermaid
 flowchart LR
@@ -76,7 +76,7 @@ SCANNING (autonomous coverage search)
 
 ---
 
-## 🔩 Hardware
+##  Hardware
 
 | Component | Role | Notes |
 |---|---|---|
@@ -93,7 +93,7 @@ Full bill-of-materials, wiring diagrams, and pinouts are in [`docs/PROJECT_FINDE
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 finder-lite/
@@ -114,7 +114,7 @@ finder-lite/
 
 ---
 
-## 🚀 Getting Started
+## 🚀Getting Started
 
 ### Option A — Run the simulation (no hardware required)
 ```bash
@@ -134,7 +134,7 @@ Full setup, wiring, and troubleshooting: [`docs/QUICK_REFERENCE_CHECKLIST.md`](d
 
 ---
 
-## 🧠 How the Fusion Logic Works
+##  How the Fusion Logic Works
 
 No single sensor is trusted alone. A target is only confirmed as a survivor after independent evidence agrees:
 
@@ -151,7 +151,7 @@ This mirrors FINDER's own layered clutter-rejection philosophy: motion alone isn
 
 ---
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 | Limitation | Why | Path Forward |
 |---|---|---|
@@ -165,7 +165,7 @@ We'd rather state these clearly than have you discover them mid-demo.
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Port fusion state machine to native STM32 C firmware
 - [ ] MAVLink-fused pan/tilt stabilization for aerial deployment
@@ -176,7 +176,7 @@ We'd rather state these clearly than have you discover them mid-demo.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and hardware validation reports are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
@@ -184,7 +184,7 @@ This project is explicitly designed to be a **teaching and prototyping platform*
 
 ---
 
-## 📚 References & Research
+##  References & Research
 
 Curated list of the papers and sources that informed this project's design — from FINDER's original research to UWB vital-sign detection and multi-sensor USAR fusion:
 
@@ -200,13 +200,13 @@ Full annotated bibliography: [`docs/PROJECT_FINDER_LITE_HACKATHON_SUBMISSION.md`
 
 ---
 
-## 📜 License
+##  License
 
 Released under the [MIT License](LICENSE) — build on it, fork it, ship it.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Inspired by NASA JPL and DHS S&T's FINDER program. Built as a hackathon proof-of-concept to make FINDER-class sensor fusion logic understandable and buildable outside a national lab.
 
