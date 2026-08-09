@@ -6,14 +6,14 @@ platform for SAR sensor-fusion. Contributions of all sizes are welcome.
 
 ## Ways to Contribute
 
-- 🐛 **Bug reports** — especially firmware/hardware issues (radar parsing
+-  **Bug reports** — especially firmware/hardware issues (radar parsing
   edge cases, servo jitter, ESP32 core version incompatibilities). Real
   hardware testing on different module batches is genuinely valuable since
   Hi-Link has shipped minor protocol variations across production runs.
-- 🔧 **Hardware validation reports** — if you build this with different
+-  **Hardware validation reports** — if you build this with different
   sensors, MCUs, or a different ESP32 core version, please share what
   worked/didn't. This helps everyone else building from this repo.
-- ✨ **Feature contributions** — UWB radar integration, STM32 firmware port,
+- **Feature contributions** — UWB radar integration, STM32 firmware port,
   MAVLink attitude fusion, acoustic localization, occlusion-aware
   simulation, etc. See the [Roadmap](README.md#-roadmap) for ideas.
 - 📖 **Documentation** — clarifications, better wiring diagrams, translated
