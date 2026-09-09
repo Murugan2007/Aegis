@@ -1,4 +1,4 @@
-# Contributing to Project FINDER-Lite
+# Contributing to Project AEGIS
 
 Thanks for considering a contribution — this project started as a hackathon
 proof-of-concept and is meant to grow as an open teaching/prototyping
