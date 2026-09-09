@@ -1,4 +1,5 @@
 # AEGIS
+# (Aerial Emergency Ground and Air Intelligent Systems) 
 ### AI-powered autonomous drone for search & rescue
 **Team Impact Minds** · Smart India Hackathon 2026 · Problem Statement **SIH26177** (Qualcomm Inc. · Robotics and Drones · Hardware)
 
