@@ -1,7 +1,7 @@
 # AEGIS
 # (Aerial Emergency Ground and Air Intelligent Systems) 
 ### AI-powered autonomous drone for search & rescue
-**Team Impact Minds** · Smart India Hackathon 2026 · Problem Statement **SIH26177** (Qualcomm Inc. · Robotics and Drones · Hardware)
+
 
 > *"A deployable AI-powered autonomous drone that aids search-and-rescue operations by detecting people and hazards, thereby improving responder safety and reducing victim discovery time."*
 
@@ -23,30 +23,30 @@
 
 ## The Problem
 
-In the first hours after a disaster — an earthquake, a building collapse, a flood — two things are scarce: **time** and **safe access**. Search-and-rescue (SAR) teams have to manually search unstable rubble, often without knowing what hazards (fire, structural failure, floodwater) are hiding nearby, and without any way to know whether a buried survivor is alive before digging.
+An earthquake hits, a building crumbles to pieces, there comes flooding – time and safety are rare to be found in such conditions. The Search and rescue team has to manually sift through the rubble while having no knowledge regarding any kind of dangers (fires, collapses or floodwaters) around them, nor even the slightest idea that there might be survivors inside.
 
-Existing tools solve pieces of this, but not the whole picture:
-- Trained dogs and handheld life-detectors require a person to physically enter the danger zone.
-- Thermal drones can spot people on the surface, but can't see anyone buried.
-- Radar life-detectors can sense someone under rubble, but can't show responders *what* triggered the alert, or tell a rescuer from a victim.
+Currently Available Technology addresses certain aspects of the problem statement but none covers everything at once:
+Dogs or Handheld Life Detectors need human intervention to physically locate inside the hazardous region.
+Thermal Drone Cameras detect people only outside of rubble.
+Life Detection Radars can detect individuals inside the debris but provide zero information as what triggered the alarm or how differentiates victims from rescuers.
 
-AEGIS is built to close that gap: one autonomous aerial platform that finds survivors on the surface **and** underground, flags hazards, filters out its own rescue team, and lets responders act on evidence instead of a guess.
+So here comes the introduction of AEGIS – an unmanned aerial system for detecting both exposed & concealed survivors, detecting any kind of hazard present in that particular region, avoiding its own rescue party and thus acting with confidence.
 
 ---
 
 ## What NASA JPL's FINDER Lacked
 
-[FINDER](https://www.jpl.nasa.gov/) (Finding Individuals for Disaster and Emergency Response) is the benchmark in this space — a handheld radar, built on JPL's spacecraft-tracking signal processing, that detects breathing/heartbeat motion through rubble. It's real, it's been field-validated (helped locate survivors after the 2015 Nepal earthquake), and AEGIS is directly inspired by it.
+[FINDER](https://www.jpl.nasa.gov/) (Finding Individuals for Disaster and Emergency Response) is the benchmark in this space that is, a handheld radar, built on JPL's spacecraft-tracking signal processing, that detects breathing/heartbeat motion through rubble. It's real, it's been field-validated (helped locate survivors after the 2015 Nepal earthquake), and AEGIS is directly inspired by it.
 
 But FINDER has structural limitations that come from *what it is* — a handheld, single-purpose radar:
 
-- **No visual proof.** It gives a "someone is alive somewhere in this field" signal — it can't show a responder what it found.
+- **No visual proof.** It gives a "someone is alive somewhere in this field" it can't show a responder what it found.
 - **Requires a person to carry it into the danger zone.** The exact terrain FINDER is searching (unstable rubble) is the terrain a responder has to physically stand on to use it.
 - **Survivors only.** It has no way to flag fire, floodwater, or structural hazards nearby.
 - **No way to tell rescuer from victim.** If a team member walks through the search field, FINDER can't filter them out.
-- **No communication.** Once someone is found, FINDER's job is done — it can't help a located-but-not-yet-extracted survivor communicate with responders (a real gap seen in Nepal 2015, where found survivors sometimes waited hours for extraction).
+- **No communication.** Once someone is found, FINDER's job is done, it can't help a located-but-not-yet-extracted survivor communicate with responders (a real gap seen in Nepal 2015, where found survivors sometimes waited hours for extraction).
 
-AEGIS doesn't replace FINDER's radar science — it inherits the same physical principle (detecting breathing-scale motion) but removes the handheld/single-purpose constraints by putting it on an autonomous drone alongside vision, hazard detection, and two-way comms.
+AEGIS doesn't replace FINDER's radar science instead it just inherits the same physical principle (detecting breathing-scale motion) but removes the handheld/single-purpose constraints by putting it on an autonomous drone alongside vision, hazard detection, and two-way comms.
 
 ---
 
@@ -164,4 +164,4 @@ One thing worth being upfront about: FINDER's ~80% field accuracy comes from rea
 
 ---
 
-*Built by Team Impact Minds for Smart India Hackathon 2026.*
+*Built with love by Murugan and Team.*
