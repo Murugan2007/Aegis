@@ -23,17 +23,18 @@
 
 ## The Problem
 
-An earthquake hits, a building crumbles to pieces, there comes flooding – time and safety are rare to be found in such conditions.
+An earthquake hits, a building crumbles to pieces, there comes flooding where time and safety are rare to be found in such conditions.
 
 The Search and rescue team has to manually sift through the rubble while having no knowledge regarding any kind of dangers (fires, collapses or floodwaters) around them, nor even the slightest idea that there might be survivors inside.
 
 Currently Available Technology addresses certain aspects of the problem statement but none covers everything at once:
 Dogs or Handheld Life Detectors need human intervention to physically locate inside the hazardous region.
+
 Thermal Drone Cameras detect people only outside of rubble.
 
 Life Detection Radars can detect individuals inside the debris but provide zero information as what triggered the alarm or how differentiates victims from rescuers.
 
-So here comes the introduction of AEGIS – an unmanned aerial system for detecting both exposed & concealed survivors, detecting any kind of hazard present in that particular region, avoiding its own rescue party and thus acting with confidence.
+So here comes the introduction of AEGIS that is, an unmanned aerial system for detecting both exposed & concealed survivors, detecting any kind of hazard present in that particular region, avoiding its own rescue party and thus acting with confidence.
 
 ---
 
@@ -43,14 +44,14 @@ So here comes the introduction of AEGIS – an unmanned aerial system for detect
 
 But FINDER has structural limitations that come from *what it is* : a handheld, single-purpose radar:
 
-- **No visual proof.** It gives a "someone is alive somewhere in this field" it can't show a responder what it found.
-- 
+**No visual proof.** It gives a "someone is alive somewhere in this field" it can't show a responder what it found.
+
 - **Requires a person to carry it into the danger zone.** The exact terrain FINDER is searching (unstable rubble) is the terrain a responder has to physically stand on to use it.
-- 
+ 
 - **Survivors only.** It has no way to flag fire, floodwater, or structural hazards nearby.
-- 
+
 - **No way to tell rescuer from victim.** If a team member walks through the search field, FINDER can't filter them out.
-- 
+ 
 - **No communication.** Once someone is found, FINDER's job is done, it can't help a located-but-not-yet-extracted survivor communicate with responders (a real gap seen in Nepal 2015, where found survivors sometimes waited hours for extraction).
 
 AEGIS doesn't replace FINDER's radar science instead it just inherits the same physical principle (detecting breathing-scale motion) but removes the handheld/single-purpose constraints by putting it on an autonomous drone alongside vision, hazard detection, and two-way comms.
