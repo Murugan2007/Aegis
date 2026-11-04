@@ -84,7 +84,7 @@ The Underground division uses three different radar modules, and they don't dete
 It's good at open-air human tracking, but its 24GHz wavelength attenuates fast through dense rubble, so it can't penetrate meaningful debris depth.
 
 - **HLK-LD2412** (24GHz FMCW, range-gated) divides its field into 0.75m distance gates and compares each gate's reflected energy against a learned baseline, flagging "present" whether the person is moving or lying still and breathing. This is what lets it catch someone motionless where LD2450 would miss them.
-- 
+ 
 - **Novelda X4M200** (7.29GHz UWB impulse radar) sends short pulses and looks for millimeter-scale, periodic displacement in a specific range bin matching a breathing/heartbeat rhythm, the closest of the three to genuine vital-sign extraction, and (with a wider bandwidth than the 24GHz modules) capable of real through-wall/through-debris penetration where the LD-series can't go.
 
 None of the three recognize a human shape or identity biologically, they all infer "human" indirectly from how the reflected signal behaves. That's precisely why **active-tag exclusion**, not the radar itself, is what filters a rescuer from a survivor in AEGIS's design.
@@ -142,7 +142,7 @@ One thing worth being upfront about: FINDER's ~80% field accuracy comes from rea
 
 ## Software Stack
 
-- **On-device AI**: lightweight vision/classification models on the Uno Q (QRB2210 has GPU/VPU/ISP, no dedicated NPU — models kept nano/tiny-class)
+- **On-device AI**: lightweight vision/classification models on the Uno Q (QRB2210 has GPU/VPU/ISP, no dedicated NPU models kept nano/tiny-class)
 - **Firmware**: ESP32 / STM32 for sensor nodes
 - **Comms relay**: Vosk (offline STT), espeak-ng (offline TTS), LoRa text transport
 - **Dashboard**: WebSocket fed command center interface, Chart.js v4, geotagged detection log
